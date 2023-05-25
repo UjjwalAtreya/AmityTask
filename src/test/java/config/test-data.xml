@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>Automation</comment>
+    <entry key="BaseUrl">https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</entry>
+    <entry key="username">Admin</entry>
+    <entry key="password">admin123</entry>
+
+    <entry key="menuPIM">PIM</entry>
+    <entry key="menuAdmin">Admin</entry>
+
+    <entry key="topBarMenuJob">Job</entry>
+    <entry key="jobMenu_Pay_grades">Pay Grades</entry>
+    <entry key="nameForPayGrade">Indian Rupee</entry>
+    <entry key="currency">INR - Indian Rupee</entry>
+    <entry key="minimumSalary">30000</entry>
+    <entry key="maximumSalary">100000</entry>
+    
+    <entry key="partialText">ch</entry>
+</properties>

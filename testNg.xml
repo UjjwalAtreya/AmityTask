@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Automation Suite" parallel="tests" thread-count="2">
+    <parameter name="configFile" value="test-data.xml"/>
+    <listeners>
+        <listener class-name="Listeners.WebDriverListener"/>
+    </listeners>
+
+    <test name="ALL TEST FOR CHROME" verbose="2">
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="platform" value="WIN10"/>
+        <classes>
+            <class name="Tests.PIMPageTest.PIMPageTest">
+                <methods>
+                    <include name="testToVerifySearchWithPartialText"/>
+                </methods>
+            </class>
+            <class name="Tests.AdminPageTest.AdminPageTest">
+                <methods>
+                    <include name="testToVerifyIfUserCanAddPayGrades"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+</suite>
