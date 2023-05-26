@@ -55,15 +55,13 @@ public class PIMPage {
     }
 
     public void verifyPartialTextInSearchedResult(String partialText){
-        new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfAllElements(allSearchResults));
-        int firstNameIndex = 1;
-        int lastNameIndex =2;
-        int nextNameValue = 7;
+       // new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfAllElements(allSearchResults));
+        int firstNameIndex = 2;
+        int lastNameIndex =3;
+        int nextNameValue = 9;
        List<String> validData = new ArrayList<>();
         for (WebElement row:allSearchResults) {
-            if(row.getText() !=""){
                 validData.add(row.getText());
-            }
         }
         for(int i=0; i<listRow.size();i++){
             String actualDataToVerify = validData.get(firstNameIndex)+validData.get(lastNameIndex);
